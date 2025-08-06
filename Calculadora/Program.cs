@@ -65,8 +65,22 @@ class Program
 
     static double Subtrair(double a, double b)
     {
-        // fazer depois
+        
         return 0;
+
+        // Solicita o primeiro número
+        Console.Write("Digite o primeiro número: ");
+        double numero1 = Convert.ToDouble(Console.ReadLine());
+
+        // Solicita o segundo número
+        Console.Write("Digite o segundo número: ");
+        double numero2 = Convert.ToDouble(Console.ReadLine());
+
+        // Realiza a subtração
+        double resultado = numero1 - numero2;
+
+        // Exibe o resultado
+        Console.WriteLine($"O resultado da subtração é: {resultado}");
     }
 
     static double Multiplicar(double a, double b)
