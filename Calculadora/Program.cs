@@ -71,7 +71,16 @@ class Program
 
     static double Multiplicar(double a, double b)
     {
-        // fazer depois
+        Console.Write("Digite o primeiro número: ");
+        double a = Convert.ToDouble(Console.ReadLine());
+        Console.Write("Digite o segundo número: ");
+        double b = Convert.ToDouble(Console.ReadLine());
+
+        double resultado = a * b;
+        Console.WriteLine($"{a} x {b}: {resultado}");
+
+        Console.WriteLine("\nPressione qualquer tecla para sair...");
+        Console.ReadKey();
         return 0;
     }
 
