@@ -59,8 +59,9 @@ class Program
     // funções vão ser feitas por cada pessoa do grupo
     static double Soma(double a, double b)
     {
-        // fazer depois
-        return 0;
+         static double Soma(double a, double b)
+    {
+        return a + b;
     }
 
     static double Subtrair(double a, double b)
