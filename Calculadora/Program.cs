@@ -51,61 +51,33 @@ class Program
                 Console.WriteLine("Opção inválida");
             }
 
-            Console.WriteLine("Aperta Enter pra continuar...");
+            Console.WriteLine("Aperte Enter para continuar...");
             Console.ReadLine();
         }
     }
 
-    // funções vão ser feitas por cada pessoa do grupo
     static double Soma(double a, double b)
-    {
-         static double Soma(double a, double b)
     {
         return a + b;
     }
 
     static double Subtrair(double a, double b)
     {
-        // Solicita o primeiro número
-        Console.Write("Digite o primeiro número: ");
-        double numero1 = Convert.ToDouble(Console.ReadLine());
-
-        // Solicita o segundo número
-        Console.Write("Digite o segundo número: ");
-        double numero2 = Convert.ToDouble(Console.ReadLine());
-
-        // Realiza a subtração
-        double resultado = numero1 - numero2;
-
-        // Exibe o resultado
-        Console.WriteLine($"O resultado da subtração é: {resultado}");
+        return a - b;
     }
 
     static double Multiplicar(double a, double b)
     {
-        Console.Write("Digite o primeiro número: ");
-        double a = Convert.ToDouble(Console.ReadLine());
-        Console.Write("Digite o segundo número: ");
-        double b = Convert.ToDouble(Console.ReadLine());
-
-        double resultado = a * b;
-        Console.WriteLine($"{a} x {b}: {resultado}");
-
-        Console.WriteLine("\nPressione qualquer tecla para sair...");
-        Console.ReadKey();
-        return 0;
+        return a * b;
     }
 
     static double Dividir(double a, double b)
     {
-       static double Dividir(double a, double b)
-{
-    if (b == 0)
-    {
-        Console.WriteLine("Erro: Divisão por zero não é permitida.");
-        return 0; // ou você pode lançar uma exceção, dependendo do que preferir
+        if (b == 0)
+        {
+            Console.WriteLine("Erro: Divisão por zero não é permitida.");
+            return 0;
+        }
+        return a / b;
     }
-
-    return a / b;
 }
-
