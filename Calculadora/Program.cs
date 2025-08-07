@@ -71,8 +71,11 @@ class Program
 
     static double Multiplicar(double a, double b)
     {
-        // fazer depois
-        return 0;
+        static double Multiplicar(double a, double b)
+{
+    return a * b;
+}
+
     }
 
     static double Dividir(double a, double b)
