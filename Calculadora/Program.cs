@@ -77,7 +77,16 @@ class Program
 
     static double Dividir(double a, double b)
     {
-        // fazer depois (lembrar de ver se b é diferente de 0)
-        return 0;
+      static double Dividir(double a, double b)
+{
+    if (b == 0)
+    {
+        Console.WriteLine("Erro: Divisão por zero não é permitida.");
+        return 0; // ou você pode lançar uma exceção, dependendo do que preferir
+    }
+
+    return a / b;
+}
+
     }
 }
